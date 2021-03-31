@@ -8,7 +8,7 @@
 	<title>Salvar</title>
 	</head>
 	<body>
-		<h1>Update page</h1>
+		<h1>salvar</h1>
 			<% 
 			try{
 			String id =request.getParameter("id");
@@ -25,7 +25,7 @@
 			String psw="caio0101";
 			Connection con =null; 
 			Statement st = null;
-			String sql = "UPDATE student set name='"+name+"',city='"+city+"',phone='"+phone+"' where id ="+id;
+			String sql = "INSERT INTO student(id,name,city,phone) VALUES("+id+",'"+name+"','"+city+"','"+phone+"')";
 			
 			con = DriverManager.getConnection(url,root,psw);//fazer conexão com o banco de dados
 			//Prepara o sql que eu to passando			

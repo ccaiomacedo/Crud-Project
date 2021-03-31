@@ -9,6 +9,10 @@
 	</head>
 	<body>
 		<h1>Index</h1>
+		
+		<form action="New.jsp" method="post">
+			<input type="submit" value="Novo Registro">
+		</form>
 		<%
 			try{
 			//tenho que passar o driver para que ele possa ser utilizado com java
